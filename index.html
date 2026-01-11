@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$TITS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Starfield Background -->
+    <div class="starfield" id="starfield"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="assets/logo.jpg" alt="TITS Logo" class="nav-logo">
+            <span class="nav-title">TITS</span>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">THE STORY</a></li>
+            <li><a href="#game">GAME</a></li>
+            <li><a href="#meme-lab">TITTY PICS</a></li>
+            <li><a href="#draw">SQUEEZE</a></li>
+            <li><a href="#how-to-buy">HOW-TO-BUY</a></li>
+            <li><a href="#chart">CHART</a></li>
+        </ul>
+        <a href="#" class="buy-btn nav-buy">BUY</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <img src="assets/logo.png" alt="TITS Logo" class="hero-logo">
+            <h1 class="hero-title">TITS</h1>
+            <p class="hero-ticker">$TITS</p>
+            <div class="contract-box">
+                <span class="contract-address" id="contractAddress">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span>
+                <button class="copy-btn" id="copyBtn" title="Copy to clipboard">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                </button>
+            </div>
+            <a href="#" class="buy-btn hero-buy">BUY</a>
+        </div>
+    </section>
+
+    <!-- The Story Section -->
+    <section class="section story" id="about">
+        <div class="container">
+            <h2 class="section-title">THE STORY</h2>
+            <div class="story-box">
+                <div class="story-content">
+                    <p class="story-headline">$TESTICLE hit 22M market cap. The universe demanded equilibrium.</p>
+                    <p class="story-text">For every action, there is an equal and opposite reaction. When $TESTICLE pumped, the cosmos cried out for balance. The duality had to be completed. The world needed $TITS.</p>
+                    <p class="story-text">We are not competition. We are completion. Two sides of the same degenerate coin. Where there are balls, there must be... well, you get it.</p>
+                    <div class="story-divider"></div>
+                    <p class="story-quote">"It's just tits. But it's our tits."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Section -->
+    <section class="section game" id="game">
+        <div class="container">
+            <h2 class="section-title">FLAPPY TITS</h2>
+            <div class="game-grid">
+                <div class="game-card">
+                    <div class="game-canvas-container">
+                        <canvas id="gameCanvas" width="400" height="500"></canvas>
+                        <div class="game-overlay" id="gameOverlay">
+                            <p class="game-start-text">Click or Space to Fly</p>
+                        </div>
+                        <div class="game-over-overlay" id="gameOverOverlay">
+                            <p class="game-over-title">GAME OVER</p>
+                            <p class="game-over-score">Score: <span id="finalScore">0</span></p>
+                            <div class="name-input-container">
+                                <input type="text" id="playerNameInput" placeholder="Enter your name" maxlength="12">
+                                <button id="submitScoreBtn" class="submit-score-btn">Submit</button>
+                            </div>
+                            <p class="play-again-text">Click to Play Again</p>
+                        </div>
+                    </div>
+                    <div class="game-controls">
+                        <div class="game-score">
+                            <span class="score-label">SCORE</span>
+                            <span class="score-value" id="scoreValue">0</span>
+                        </div>
+                        <div class="game-best">
+                            <span class="best-label">BEST</span>
+                            <span class="best-value" id="bestValue">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="leaderboard-card">
+                    <h3>LEADERBOARD</h3>
+                    <div class="leaderboard-list" id="leaderboardList">
+                        <!-- Leaderboard items will be populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Titty Pics Section -->
+    <section class="section titty-pics" id="meme-lab">
+        <div class="container">
+            <h2 class="section-title">TITTY PICS</h2>
+            <p class="section-subtitle">The finest $TITS content from our degens</p>
+
+            <div class="slideshow-container">
+                <div class="slideshow-wrapper" id="slideshowWrapper">
+                    <!-- Slide 1 -->
+                    <div class="slide active">
+                        <div class="meme-art image-slide">
+                            <img src="assets/Tits 1.jpg" alt="TITS 1">
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <div class="meme-art image-slide">
+                            <img src="assets/Tits 2.jpg" alt="TITS 2">
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <div class="meme-art image-slide">
+                            <img src="assets/Tits 3.jpg" alt="TITS 3">
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="slide">
+                        <div class="meme-art image-slide">
+                            <img src="assets/Tits 4.jpg" alt="TITS 4">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slideshow-controls">
+                    <button class="slide-btn prev-btn" id="prevSlide">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="slide-dots" id="slideDots"></div>
+                    <button class="slide-btn next-btn" id="nextSlide">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <p class="meme-cta">Drop your best $TITS memes in the community</p>
+            <div class="social-cta">
+                <a href="#" class="submit-meme-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                    Submit on X
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Squeeze Section -->
+    <section class="section squeeze" id="draw">
+        <div class="container">
+            <h2 class="section-title">SQUEEZE</h2>
+            <p class="section-subtitle">How hard can you squeeze?</p>
+            <div class="squeeze-game">
+                <div class="squeeze-container">
+                    <div class="squeeze-target" id="squeezeTarget">
+                        <img src="assets/logo.png" alt="Squeeze" class="squeeze-logo">
+                        <div class="squeeze-ripple"></div>
+                    </div>
+                    <div class="squeeze-stats">
+                        <div class="squeeze-stat">
+                            <span class="squeeze-label">SQUEEZES</span>
+                            <span class="squeeze-value" id="squeezeCount">0</span>
+                        </div>
+                        <div class="squeeze-stat">
+                            <span class="squeeze-label">BEST</span>
+                            <span class="squeeze-value" id="squeezeBest">0</span>
+                        </div>
+                        <div class="squeeze-stat">
+                            <span class="squeeze-label">TIME</span>
+                            <span class="squeeze-value" id="squeezeTimer">10</span>
+                        </div>
+                    </div>
+                    <button class="squeeze-start-btn" id="squeezeStartBtn">START SQUEEZING</button>
+                    <p class="squeeze-instructions">Click as fast as you can in 10 seconds!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructions Section -->
+    <section class="section instructions" id="how-to-buy">
+        <div class="container">
+            <h2 class="section-title">INSTRUCTIONS</h2>
+            <div class="instructions-grid">
+                <div class="instruction-card">
+                    <div class="instruction-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="M7 15h0M2 9h20"></path>
+                        </svg>
+                    </div>
+                    <h3>WALLET</h3>
+                    <p>Get Phantom. It's safe and yellow (mostly).</p>
+                </div>
+                <div class="instruction-card">
+                    <div class="instruction-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 6v12M8 10h8M8 14h8"></path>
+                        </svg>
+                    </div>
+                    <h3>SOL</h3>
+                    <p>Load up on SOL. Transfers are instant.</p>
+                </div>
+                <div class="instruction-card">
+                    <div class="instruction-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="M21 21l-4.35-4.35"></path>
+                        </svg>
+                    </div>
+                    <h3>PUMP</h3>
+                    <p>Paste the CA on Pump.fun search bar.</p>
+                </div>
+                <div class="instruction-card">
+                    <div class="instruction-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                    </div>
+                    <h3>SWAP</h3>
+                    <p>Swap SOL for $TITS. Feel the power.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chart Section -->
+    <section class="section chart" id="chart">
+        <div class="container">
+            <h2 class="section-title">LIVE CHART</h2>
+            <div class="live-chart-container">
+                <div class="chart-embed">
+                    <!-- DexScreener Embed - Replace TOKEN_ADDRESS with actual contract address -->
+                    <iframe
+                        src="https://dexscreener.com/solana/TOKEN_ADDRESS?embed=1&theme=dark&trades=0&info=0"
+                        title="$TITS Chart"
+                    ></iframe>
+                </div>
+                <div class="chart-links">
+                    <a href="#" class="chart-link-btn" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                        DexScreener
+                    </a>
+                    <a href="#" class="chart-link-btn" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="6" y="4" width="12" height="16" rx="6" ry="6"></rect>
+                        </svg>
+                        Pump.fun
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo.jpg" alt="TITS Logo">
+                    <span>$TITS</span>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="Twitter/X">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" title="Telegram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <p class="footer-disclaimer">$tits, we keep bouncing</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
